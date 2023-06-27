@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5"
+    android:background="@mipmap/app_background_3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/red_circle_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ssslogo"
+            android:layout_width="154dp"
+            android:layout_height="121dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/sssmainlogo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="HELP &amp; FEEDBACK"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <EditText
+        android:id="@+id/edtTxtFeedback"
+        android:layout_width="298dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF7676"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Please enter your feedback!"
+        android:inputType="textMultiLine"
+        android:lines="100"
+        android:overScrollMode="always"
+        android:paddingLeft="10dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textColor="#FF5252"
+        android:textColorHint="#515151"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtFeedback"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtFeedback"
+        app:layout_constraintTop_toBottomOf="@+id/txtFeedback" />
+
+    <Button
+        android:id="@+id/btnFeedbackSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:onClick="onBtnFeedbackSubmit"
+        android:text="submit"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtFeedback"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtFeedback"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtFeedback"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_3"
+    tools:context=".MainActivity4">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="298dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/red_circle_background"
+                android:scaleX="1.1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ssslogo"
+                    android:layout_width="154dp"
+                    android:layout_height="121dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/todo"
+                    android:scaleX="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/sssmainlogo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <EditText
+                    android:id="@+id/edtMessageNumberFour"
+                    android:layout_width="275dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="+ Add Number"
+                    android:inputType="textPersonName|phone"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/edtMessageNumberThree"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/edtMessageNumberThree"
+                    app:layout_constraintTop_toBottomOf="@+id/edtMessageNumberThree" />
+
+                <EditText
+                    android:id="@+id/edtMessageNumberFive"
+                    android:layout_width="275dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="+ Add Number"
+                    android:inputType="textPersonName|phone"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/edtMessageNumberFour"
+                    app:layout_constraintStart_toStartOf="@+id/edtMessageNumberFour"
+                    app:layout_constraintTop_toBottomOf="@+id/edtMessageNumberFour" />
+
+                <EditText
+                    android:id="@+id/edtMessageNumberTwo"
+                    android:layout_width="275dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="+ Add Number"
+                    android:inputType="textPersonName|phone"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/edtMessageNumberOne"
+                    app:layout_constraintStart_toStartOf="@+id/edtMessageNumberOne"
+                    app:layout_constraintTop_toBottomOf="@+id/edtMessageNumberOne" />
+
+                <EditText
+                    android:id="@+id/edtMessageNumberThree"
+                    android:layout_width="275dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="+ Add Number"
+                    android:inputType="textPersonName|phone"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/edtMessageNumberTwo"
+                    app:layout_constraintStart_toStartOf="@+id/edtMessageNumberTwo"
+                    app:layout_constraintTop_toBottomOf="@+id/edtMessageNumberTwo" />
+
+                <EditText
+                    android:id="@+id/edtCallNumberOne"
+                    android:layout_width="275dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="+ Add Number"
+                    android:inputType="textPersonName|phone"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtCallNumber"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtCallNumber"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCallNumber" />
+
+                <EditText
+                    android:id="@+id/edtAlertMessage"
+                    android:layout_width="274dp"
+                    android:layout_height="133dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lines="50"
+                    android:overScrollMode="never"
+                    android:paddingLeft="10dp"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:text="PLEASE HELP ME!!! IT'S AN EMERGENCY SITUATION!!!🚨"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtAlertMessage"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAlertMessage"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAlertMessage" />
+
+
+                <TextView
+                    android:id="@+id/txtEmerNumAndMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Message :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtMessageNumber2" />
+
+                <TextView
+                    android:id="@+id/txtMessageNumber2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="EDIT EMERGENCY CONTACTS &amp; ALERT MESSAGE"
+                    android:textAlignment="center"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtAlertMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Alert Message :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/edtCallNumberOne"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/edtCallNumberOne"
+                    app:layout_constraintTop_toBottomOf="@+id/edtCallNumberOne" />
+
+                <TextView
+                    android:id="@+id/txtCallNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Call :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/edtMessageNumberFive"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/edtMessageNumberFive"
+                    app:layout_constraintTop_toBottomOf="@+id/edtMessageNumberFive" />
+
+                <EditText
+                    android:id="@+id/edtMessageNumberOne"
+                    android:layout_width="275dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="+ Add Number"
+                    android:inputType="textPersonName|phone"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtEmerNumAndMsg"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtEmerNumAndMsg"
+                    app:layout_constraintTop_toBottomOf="@+id/txtEmerNumAndMsg" />
+
+                <Button
+                    android:id="@+id/btnNumbersDetailsSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="btnEditNumbersSave"
+                    android:text="SAVE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/edtAlertMessage"
+                    app:layout_constraintStart_toStartOf="@+id/edtAlertMessage"
+                    app:layout_constraintTop_toBottomOf="@+id/edtAlertMessage" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

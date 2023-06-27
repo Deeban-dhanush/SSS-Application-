@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_3"
+    tools:context=".MainActivity9">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/red_circle_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ssslogo"
+            android:layout_width="154dp"
+            android:layout_height="121dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/sssmainlogo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtForPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="FORGOT PASSWORD"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/txtMobileNumberCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mobile Number :"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtForPass"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/edtTxtNumberCheck"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF7676"
+        android:ems="10"
+        android:hint="@string/mobile_number"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|phone"
+        android:maxLength="10"
+        android:paddingLeft="10dp"
+        android:textColor="#FF5252"
+        android:textColorHint="#515151"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtMobileNumberCheck"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtMobileNumberCheck"
+        app:layout_constraintTop_toBottomOf="@+id/txtMobileNumberCheck"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/txtPasswordRecovery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Set Recovery Question :"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtNumberCheck"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtNumberCheck"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtNumberCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGrpPasswordRecoveryCheck"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/txtPasswordRecovery"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordRecovery"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordRecovery">
+
+        <RadioButton
+            android:id="@+id/radioPasswordRecovery1Check"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:buttonTint="#FF5252"
+            android:text="What is your birth Place?"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/radioGrpPasswordRecoveryCheck"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/radioGrpPasswordRecoveryCheck"
+            app:layout_constraintTop_toBottomOf="@+id/radioGrpPasswordRecoveryCheck" />
+
+        <RadioButton
+            android:id="@+id/radioPasswordRecovery2Check"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#FF5252"
+            android:text="What is your nick name?"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/radioPasswordRecovery1Check"
+            app:layout_constraintStart_toStartOf="@+id/radioPasswordRecovery1Check"
+            app:layout_constraintTop_toBottomOf="@+id/radioPasswordRecovery1Check"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioPasswordRecovery3Check"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#FF5252"
+            android:text="What is your pet's name?"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/radioPasswordRecovery2Check"
+            app:layout_constraintStart_toStartOf="@+id/radioPasswordRecovery2Check"
+            app:layout_constraintTop_toBottomOf="@+id/radioPasswordRecovery2Check" />
+
+        <RadioButton
+            android:id="@+id/radioPasswordRecovery4Check"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#FF5252"
+            android:text="What is your favorite food?"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/radioPasswordRecovery3Check"
+            app:layout_constraintStart_toStartOf="@+id/radioPasswordRecovery3Check"
+            app:layout_constraintTop_toBottomOf="@+id/radioPasswordRecovery3Check" />
+
+        <RadioButton
+            android:id="@+id/radioPasswordRecovery5Check"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="#FF5252"
+            android:text="What is your favorite game?"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/radioPasswordRecovery4Check"
+            app:layout_constraintStart_toStartOf="@+id/radioPasswordRecovery4Check"
+            app:layout_constraintTop_toBottomOf="@+id/radioPasswordRecovery4Check" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtEnterPassRecoveryCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Answer :"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/radioGrpPasswordRecoveryCheck"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radioGrpPasswordRecoveryCheck"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrpPasswordRecoveryCheck" />
+
+    <EditText
+        android:id="@+id/edtTxtPassRecoveryCheck"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:backgroundTint="#FF7676"
+        android:ems="10"
+        android:hint="Enter Your Answer"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#FF5252"
+        android:textColorHint="#515151"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtEnterPassRecoveryCheck"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEnterPassRecoveryCheck"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterPassRecoveryCheck" />
+
+    <Button
+        android:id="@+id/buttonForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:onClick="onButtonForgotPassword"
+        android:text="Next"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtPassRecoveryCheck"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtPassRecoveryCheck"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtPassRecoveryCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

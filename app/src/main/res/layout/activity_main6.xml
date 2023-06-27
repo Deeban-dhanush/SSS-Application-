@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_3"
+    tools:context=".MainActivity6">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="298dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/red_circle_background"
+            android:scaleX="1.1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ssslogo"
+                android:layout_width="154dp"
+                android:layout_height="121dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/todo"
+                android:scaleX="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/sssmainlogo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <TextView
+                    android:id="@+id/txtCreators"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Creators :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppStep8" />
+
+                <TextView
+                    android:id="@+id/txtAboutUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="About Us :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtAboutUsSen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="      This android-based safety application proposed here aims at raising alerts &amp; send notifications along with sending their live location and it also capture the audio and video from their phone if anyone is facing any emergency in the form of any threat from someone, harassment, health emergency, accidental emergency, etc by shaking the phone. The app will automatically enable and the functions will perform."
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/txtAboutUs"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="@+id/txtAboutUs"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAboutUs" />
+
+                <TextView
+                    android:id="@+id/txtAboutUsSen2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="      While enabling the application, the app initially raises an alert to the user for the confirmation of the situation and start a countdown of 10 seconds along with the vibration. The user can stop the application within the 10 seconds or else after 10 seconds the app will start functioning. After 10 seconds the app will send the alert message to all the registered contact numbers and send the live location of the user and then initially call the police station from the geolocation of the user and then call the numbers one by one according to the user priority. The application also saves the video from the user mobile after the call is disconnected, the video will range from 2 to 3 minutes."
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAboutUsSen"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAboutUsSen" />
+
+                <TextView
+                    android:id="@+id/txtAppStep1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Step 1: Install SSS application in your mobile"
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/txtAppInstruction"
+                    app:layout_constraintHorizontal_bias="0.098"
+                    app:layout_constraintStart_toStartOf="@+id/txtAppInstruction"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppInstruction" />
+
+                <TextView
+                    android:id="@+id/txtCreatorsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Deeban E, Tamilarasi B, Pradeep R"
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtCreators"
+                    app:layout_constraintHorizontal_bias="0.139"
+                    app:layout_constraintStart_toStartOf="@+id/txtCreators"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCreators" />
+
+                <TextView
+                    android:id="@+id/txtAppStep2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Step 2: Signup with your username and password."
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/txtAppStep1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAppStep1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppStep1" />
+
+
+                <TextView
+                    android:id="@+id/txtAppStep3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Step 3: Enter your details in profile menu."
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/txtAppStep2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAppStep2"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppStep2" />
+
+                <TextView
+                    android:id="@+id/txtAppStep4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Step 4: Register the contacts numbers whom you wish to send the alert while in the critical situation."
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/txtAppStep3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAppStep3"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppStep3" />
+
+                <TextView
+                    android:id="@+id/txtAppStep5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Step 5: You can customize the alert message which you wish to send to the registered contact numbers."
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAppStep4"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppStep4" />
+
+                <TextView
+                    android:id="@+id/txtAppStep6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Step 6: You can edit or delete the profile or registered numbers anytime in the settings."
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/txtAppStep5"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAppStep5"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppStep5" />
+
+                <TextView
+                    android:id="@+id/txtAppStep7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Step 7: While in critical situation you can shake the mobile 3 times."
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAppStep6"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppStep6" />
+
+                <TextView
+                    android:id="@+id/txtAppStep8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Step 8: Then the app will enable as mentioned above."
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAppStep7"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAppStep7" />
+
+                <TextView
+                    android:id="@+id/txtContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="50dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Email: de3582@srmist.edu.in                              Mobile: 9876543210"
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/txtContactUs"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="@+id/txtContactUs"
+                    app:layout_constraintTop_toBottomOf="@+id/txtContactUs" />
+
+                <TextView
+                    android:id="@+id/txtAppInstruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="App Instruction :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAboutUsSen2" />
+
+                <TextView
+                    android:id="@+id/txtContactUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Contact Us :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCreatorsName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

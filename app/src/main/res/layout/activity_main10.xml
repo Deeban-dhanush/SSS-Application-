@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_3"
+    tools:context=".MainActivity10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/red_circle_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ssslogo"
+            android:layout_width="154dp"
+            android:layout_height="121dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/sssmainlogo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="New Password :"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <EditText
+        android:id="@+id/edtTxtNewPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:backgroundTint="#FF7676"
+        android:ems="10"
+        android:hint="Enter New Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#FF5252"
+        android:textColorHint="#515151"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtNewPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewPassword" />
+
+    <TextView
+        android:id="@+id/txtConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Confirm Password :"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtNewPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtNewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtNewPassword" />
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:backgroundTint="#FF7676"
+        android:ems="10"
+        android:hint="Enter Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#FF5252"
+        android:textColorHint="#515151"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtConfirmPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmPassword" />
+
+    <Button
+        android:id="@+id/buttonNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:onClick="onButtonNewPassword"
+        android:text="@string/save"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/edtConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtConfirmPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

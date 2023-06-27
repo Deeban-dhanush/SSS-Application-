@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_3"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="298dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/red_circle_background"
+                android:scaleX="1.1">
+
+                <ImageView
+                    android:id="@+id/ssslogo"
+                    android:layout_width="154dp"
+                    android:layout_height="121dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/todo"
+                    android:scaleX="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/sssmainlogo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="User Name :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtProfile" />
+
+                <TextView
+                    android:id="@+id/txtProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="PROFILE"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edtTxtUserName"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:autofillHints=""
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtUserName"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtUserName"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
+
+                <TextView
+                    android:id="@+id/txtGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gender"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/edtTxtUserName"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/edtTxtUserName"
+                    app:layout_constraintTop_toBottomOf="@+id/edtTxtUserName" />
+
+                <RadioGroup
+                    android:id="@+id/radioGrpGender"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/txtGender"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtGender"
+                    app:layout_constraintTop_toBottomOf="@+id/txtGender">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="85dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="20dp"
+                        android:buttonTint="#FF5252"
+                        android:text="@string/male"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/txtGender"
+                        app:layout_constraintTop_toBottomOf="@+id/txtGender" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="99dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:buttonTint="#FF5252"
+                        android:text="Female"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/radioMale"
+                        app:layout_constraintTop_toBottomOf="@+id/txtGender"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/radioOthers"
+                        android:layout_width="95dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:buttonTint="#FF5252"
+                        android:text="@string/others"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/radioFemale"
+                        app:layout_constraintTop_toBottomOf="@+id/txtGender" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/txtMobileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Mobile Number :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/radioGrpGender"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/radioGrpGender"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGrpGender"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edtTxtMobileNumber"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="@string/mobile_number"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName|phone"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtMobileNumber"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtMobileNumber"
+                    app:layout_constraintTop_toBottomOf="@+id/txtMobileNumber"
+                    tools:ignore="TextFields" />
+
+                <EditText
+                    android:id="@+id/edtTxtNewPass"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="Set Password"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtPassword"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+                <Button
+                    android:id="@+id/btnNewProfileSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/white"
+                    android:onClick="onButtonDetailSave"
+                    android:text="@string/save"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/edtTxtPassRecovery"
+                    app:layout_constraintStart_toStartOf="@+id/edtTxtPassRecovery"
+                    app:layout_constraintTop_toBottomOf="@+id/edtTxtPassRecovery"
+                    tools:ignore="UsingOnClickInXml" />
+
+                <TextView
+                    android:id="@+id/txtPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Password :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/edtTxtMobileNumber"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/edtTxtMobileNumber"
+                    app:layout_constraintTop_toBottomOf="@+id/edtTxtMobileNumber" />
+
+                <TextView
+                    android:id="@+id/txtPasswordRecovery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Set Recovery Question :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/edtTxtNewPass"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/edtTxtNewPass"
+                    app:layout_constraintTop_toBottomOf="@+id/edtTxtNewPass" />
+
+                <RadioGroup
+                    android:id="@+id/radioGrpPasswordRecovery"
+                    android:layout_width="300dp"
+                    android:layout_height="260dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPasswordRecovery"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtPasswordRecovery"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPasswordRecovery">
+
+                    <RadioButton
+                        android:id="@+id/radioPasswordRecovery1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:buttonTint="#FF5252"
+                        android:text="What is your birth Place?"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/txtPasswordRecovery"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/txtPasswordRecovery"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPasswordRecovery" />
+
+                    <RadioButton
+                        android:id="@+id/radioPasswordRecovery2"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:buttonTint="#FF5252"
+                        android:text="What is your nick name?"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/radioPasswordRecovery1"
+                        app:layout_constraintStart_toStartOf="@+id/radioPasswordRecovery1"
+                        app:layout_constraintTop_toBottomOf="@+id/radioPasswordRecovery1"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/radioPasswordRecovery3"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:buttonTint="#FF5252"
+                        android:text="What is your pet's name?"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/radioPasswordRecovery2"
+                        app:layout_constraintStart_toStartOf="@+id/radioPasswordRecovery2"
+                        app:layout_constraintTop_toBottomOf="@+id/radioPasswordRecovery2" />
+
+                    <RadioButton
+                        android:id="@+id/radioPasswordRecovery4"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:buttonTint="#FF5252"
+                        android:text="What is your favorite food?"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/radioPasswordRecovery3"
+                        app:layout_constraintStart_toStartOf="@+id/radioPasswordRecovery3"
+                        app:layout_constraintTop_toBottomOf="@+id/radioPasswordRecovery3" />
+
+                    <RadioButton
+                        android:id="@+id/radioPasswordRecovery5"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:buttonTint="#FF5252"
+                        android:text="What is your favorite game?"
+                        android:textColor="#FF0000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/radioPasswordRecovery4"
+                        app:layout_constraintStart_toStartOf="@+id/radioPasswordRecovery4"
+                        app:layout_constraintTop_toBottomOf="@+id/radioPasswordRecovery4" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txtEnterPassRecovery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Answer :"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/radioGrpPasswordRecovery"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/radioGrpPasswordRecovery"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGrpPasswordRecovery" />
+
+                <EditText
+                    android:id="@+id/edtTxtPassRecovery"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:autofillHints=""
+                    android:backgroundTint="#FF7676"
+                    android:ems="10"
+                    android:hint="Enter Your Answer"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF5252"
+                    android:textColorHint="#515151"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtEnterPassRecovery"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtEnterPassRecovery"
+                    app:layout_constraintTop_toBottomOf="@+id/txtEnterPassRecovery" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

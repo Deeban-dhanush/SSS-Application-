@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtAccountCreator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_3"
+    app:layout_constrainedHeight="false"
+    app:layout_constrainedWidth="false"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/red_circle_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ssslogo"
+            android:layout_width="154dp"
+            android:layout_height="121dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/sssmainlogo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="137dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="25dp"
+        android:background="#F44336"
+        android:onClick="onBtnClick"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/txtForgotPass"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="@+id/txtForgotPass"
+        app:layout_constraintTop_toBottomOf="@+id/txtForgotPass"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <EditText
+        android:id="@+id/edtTxtMobileNo"
+        android:layout_width="232dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:backgroundTint="#FF7676"
+        android:ems="10"
+        android:hint="Mobile No"
+        android:inputType="textPersonName|phone"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:textColor="#FF5252"
+        android:textColorHint="#515151"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLogin"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="@+id/txtLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/edtTxtPass"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FF7676"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:textColor="#FF3030"
+        android:textColorHint="#515151"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtMobileNo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtMobileNo"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtMobileNo"
+        app:passwordToggleEnabled="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:onClick="onBtnClickNew"
+        android:text="Doesn't have account?"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtPass"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtPass"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtPass" />
+
+    <TextView
+        android:id="@+id/txtForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="onBtnClickForgot"
+        android:text="Forgot Password?"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Log In :"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
